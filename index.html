@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Altus Records</title>
+    <style>
+        /* Reseta as margens padrão do navegador */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Configuração do fundo e centralização */
+        body {
+            background-color: #000000; /* Fundo totalmente preto */
+            color: #ffffff; /* Texto em branco para dar contraste */
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            height: 100vh; /* Ocupa 100% da altura da tela */
+            display: flex;
+            justify-content: center; /* Centraliza horizontalmente */
+            align-items: center; /* Centraliza verticalmente */
+            overflow: hidden; /* Evita barras de rolagem */
+        }
+
+        /* Container para alinhar a logo e o texto */
+        .container {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px; /* Espaço entre a logo e o texto */
+            animation: fadeIn 2s ease-in-out; /* Efeito suave ao abrir a página */
+        }
+
+        /* Estilo da Logo */
+        .logo {
+            max-width: 90%;
+            width: 450px; /* Tamanho ideal para a logo */
+            height: auto;
+        }
+
+        /* Estilo do Texto */
+        h1 {
+            font-size: 22px;
+            font-weight: 300; /* Fonte mais fina */
+            letter-spacing: 6px; /* Espaçamento entre as letras para um visual futurista/eletrônico */
+            text-transform: uppercase; /* Deixa tudo em maiúsculo */
+            color: #e0e0e0;
+        }
+
+        /* Animação de entrada (Fade In) */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsividade para celulares */
+        @media (max-width: 600px) {
+            .logo {
+                width: 300px;
+            }
+            h1 {
+                font-size: 16px;
+                letter-spacing: 4px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Coloque o nome correto do seu arquivo de imagem no 'src' abaixo -->
+        <img src="logo.png" alt="Altus Records Logo" class="logo">
+        
+        <h1>Nos vemos em 2027</h1>
+    </div>
+
+</body>
+</html>
